@@ -1,3 +1,8 @@
+/*
+ * File:
+ * Author: Brennan Duck
+ * Descriptions: This Program
+ */
 #include <cstring>
 #include <iostream>
 

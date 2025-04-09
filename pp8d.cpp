@@ -1,3 +1,8 @@
+/*
+ * File:
+ * Author: Brennan Duck
+ * Descriptions: This Program
+ */
 #include <cstring>
 #include <iostream>
 
@@ -28,9 +33,9 @@ void replaceString(const char *phrase, const char *word, char *res) {
     if (phrase[i] == '*')
       break;
   }
-  //
-  strcat(res, "I ");
-  //
+
+  strncpy(res, phrase, i);
+  res[i] = '\0';
   strcat(res, word);
   strcat(res, phrase + i + 1);
 

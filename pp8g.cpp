@@ -1,3 +1,8 @@
+/*
+ * File: pp8g.cpp
+ * Author: Brennan Duck
+ * Descriptions: This Program
+ */
 #include <cmath>
 #include <iostream>
 #include <vector>

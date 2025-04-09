@@ -1,3 +1,8 @@
+/*
+ * File:
+ * Author: Brennan Duck
+ * Descriptions: This Program
+ */
 #include <iostream>
 
 void reverse(std::string strA, std::string &strB);
