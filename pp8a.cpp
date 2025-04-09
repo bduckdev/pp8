@@ -1,7 +1,7 @@
 /*
- * File:
+ * File: pp8a.cpp
  * Author: Brennan Duck
- * Descriptions: This Program takes two strings from stdin and prints them in
+ * Description: This Program takes two strings from stdin and prints them in
  * alphabetical order.
  */
 #include <cstring>

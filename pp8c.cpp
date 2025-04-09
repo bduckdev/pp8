@@ -1,12 +1,14 @@
 /*
- * File:
+ * File: pp8c.cpp
  * Author: Brennan Duck
- * Descriptions: This Program
+ * Description: This Program takes the users age from stdin and prints the year
+ * they were born in or throws an error
  */
 #include <cstring>
 #include <iostream>
 
 int main() {
+  // Declare variables and take data from stdin
   char strAge[4];
   int age;
   bool isValidInt;
@@ -15,17 +17,17 @@ int main() {
 
   std::cin.getline(strAge, 4);
 
-  // iterate through our chars
+  // Iterate over strAge
   for (int i = 0; i < strlen(strAge); i++) {
-    // figure out if char's a valid int
+    /* Check if current char is a valid int, print error message and return 1 if
+     not. */
     isValidInt = isdigit(strAge[i]);
-    // throw error if no convert
     if (!isValidInt) {
       std::cout << "Age must be a positive integer\n";
       return 1;
     }
   }
-  // convert to int and display output
+  // If no error was thrown, it's safe to convert and print output.
   age = atoi(strAge);
   std::cout << "Born in " << 2025 - age << '\n';
 
